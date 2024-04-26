@@ -52,9 +52,41 @@
         }
 
         p {
-            text color: blue;
-            
+            text color: black;
+            font style: none;
         }
+
+.slideshow-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.pause-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+.pause-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
     </style>
 </head>
 
@@ -75,6 +107,64 @@
     <div id="video-container">
         <iframe width="1056" height="594" src="https://www.youtube.com/embed/Kbna6-a6xmM" title="The Watchers - Official Trailer (2024)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
+
+    <p><h4>COMING SOON TO THEATRES..</h4></p>
+    <div class="slideshow-container">
+  <button class="pause-btn" onclick="togglePause()">Pause</button>
+  
+  <div class="mySlides">
+    <img src="Godzilla vs. King.jpg" alt="Godzilla vs. King">
+  </div>
+
+  <div class="mySlides">
+    <img src="Harry Potter Series.jpg" alt="Harry Potter Series">
+  </div>
+
+  <div class="mySlides">
+    <img src="Interstellar.jpg" alt="Interstellar">
+      
+      <div class="mySlides">
+    <img src="The Watchers.jpg" alt="The Watchers">
+
+       <div class="mySlides">
+    <img src="Wonder Woman.jpg" alt="Wonder Woman">
+
+     <div class="mySlides">
+    <img src="The Shawshank Redemption.jpg" alt="The Shawshank Redemption">
+ 
+       
+  </div>
+</div>
+   <script>
+var slideIndex = 0;
+var slides = document.getElementsByClassName("mySlides");
+var pauseBtn = document.querySelector(".pause-btn");
+var paused = false;
+
+showSlides();
+
+function showSlides() {
+  if (!paused) {
+    var i;
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  } else {
+    setTimeout(showSlides, 1000); // Check again after 1 second
+  }
+}
+
+function togglePause() {
+  paused = !paused;
+  pauseBtn.textContent = paused ? "Play" : "Pause";
+}
+</script>
 
     <footer>
         <p>&copy; 2024 Warner Bros. All rights reserved.</p>
