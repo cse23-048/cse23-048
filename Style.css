@@ -271,7 +271,9 @@ span{
         }
         .movie-card img {
             width: 100%;
-            height: auto;
+            height: 300px;
+		object-fit:cover;
+		object-position:center;
         }
         .movie-card:hover {
             transform: scale(1.05);
