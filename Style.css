@@ -186,7 +186,7 @@ button{
 	font-weight:bold;
 	border:2px solid; #009688;
 	background:transparent;
-	color:#fff;
+	color:black;
 	cursor:pointer;
 	position:relative;
 	overflow:hidden;
