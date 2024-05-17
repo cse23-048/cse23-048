@@ -6,7 +6,7 @@ body {
 }
 
 header {
-            background-image: url('header-bg.jpg'); /* Header background image */
+            background-image: url('background.jpeg'); /* Header background image */
             background-size: cover;
             background-position: center;
             padding: 50px 0;
