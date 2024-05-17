@@ -7,20 +7,22 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
+
+<div class="banner">
+    <img src="logo.png" alt="Warner Bros Logo" class="logo">
     <div class="navbar">
-        <img src="logo.png" class="logo" alt="Warner Bros Logo">
         <ul>
             <li><a href="warner_bros.html">Home</a></li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Movies</a>
+                <button class="dropbtn">Movies</button>
                 <div class="dropdown-content">
                     <a href="action.html">Action</a>
-                    <a href="adventure_movies.html">Adventure</a>
-                    <a href="comedy_movies.html">Comedy</a>
+                    <a href="adventure.html">Adventure</a>
+                    <a href="comedy.html">Comedy</a>
                 </div>
             </li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">TV Shows</a>
+                <button class="dropbtn">TV Shows</button>
                 <div class="dropdown-content">
                     <a href="#">Drama</a>
                     <a href="#">Sci-Fi</a>
@@ -28,7 +30,7 @@
                 </div>
             </li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Games & Apps</a>
+                <button class="dropbtn">Games & Apps</button>
                 <div class="dropdown-content">
                     <a href="#">Action</a>
                     <a href="#">Adventure</a>
@@ -39,41 +41,46 @@
             <li><a href="#">Feedback</a></li>
         </ul>
     </div>
+</div>
 
-    <div class="container">
-        <div class="content-container">
-            <div class="featured-content" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('65.jpg');">
-                <img src="featured-title.png" alt="Featured Title" class="featured-title">
-                <p class="featured-desc">
-                    In a foggy forest, a man in an advanced space suit wields a tech-based rifle in front of the skull of a Tyrannosaurus rex.
-                </p>
-                <button class="featured-button">Watch now</button>
-            </div>
+<div class="container">
+    <div class="content-container">
+        <div class="featured-content" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url('65.jpg');">
+            <h1 class="featured-title">Featured Title</h1>
+            <p class="featured-desc">
+                In a foggy forest, a man in an advanced space suit wields a tech-based rifle in front of the skull of a Tyrannosaurus rex.
+            </p>
+            <button class="featured-button">Watch Now</button>
+        </div>
 
-            <section class="coming-soon">
-                <div class="image-container">
-                    <div class="movie-card">
-                        <img src="65.jpg" alt="Movie 1">
-                        <div class="movie-title">Movie Title 1</div>
-                    </div>
-                    <div class="movie-card">
-                        <img src="365 Days.jpg" alt="Movie 2">
-                        <div class="movie-title">365 Days</div>
-                    </div>
-                    <div class="movie-card">
-                        <img src="john wick.jpg" alt="Movie 3">
-                        <div class="movie-title">John Wick</div>
-                    </div>
-                    <!-- Add more movie cards as needed -->
+        <section class="coming-soon">
+            <div class="image-container">
+                <div class="movie-card">
+                    <img src="65.jpg" alt="Movie 1">
+                    <div class="movie-title">Movie Title 1</div>
                 </div>
-            </section>
-
-            <p>"The stuff that dreams are made of"... Subscribe to our channels,<br>Press the bell icon to get the latest updates.</p>
-            <div>
-                <button type="button"><span></span>WATCH MORE</button>
-                <button type="button"><span></span>SUBSCRIBE</button>
+                <div class="movie-card">
+                    <img src="365 Days.jpg" alt="Movie 2">
+                    <div class="movie-title">365 Days</div>
+                </div>
+                <div class="movie-card">
+                    <img src="john wick.jpg" alt="Movie 3">
+                    <div class="movie-title">John Wick</div>
+                </div>
+                <!-- Add more movie cards as needed -->
             </div>
+        </section>
+
+        <p>"The stuff that dreams are made of".. Subscribe to our channels,<br>Press the bell icon to get latest updates.</p>
+        <div>
+            <button type="button" class="watch-more-btn">Watch More</button>
+            <button type="button" class="subscribe-btn">Subscribe</button>
         </div>
     </div>
+</div>
+
 </body>
 </html>
+
+                    
+          
