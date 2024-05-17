@@ -192,7 +192,38 @@ button{
 	position:relative;
 	overflow:hidden;
 }
+.container{
+	background-color:black;
+	minheight:calc(100vh - 50px);
+}
+.content-container{
+	margin-left:50px;
+	
+}
 
+.featured-content{
+	height:50vh;
+	background-repeat: no-repeat;
+	background-size:cover;
+	position:relative;
+	padding:50px;
+
+}
+
+.featured-desc{
+	width:500px;
+	color:white;
+	margin:50px;
+	
+}
+.featured-button{
+	background-color:red;
+	color:white;
+	padding:10px 20px;
+	border-radius:10px;
+	border:none;
+	outline:none;
+}
 .watch-now-btn {
     background-color: #007bff; /* Blue background color */
     color: #fff; /* White text color */
