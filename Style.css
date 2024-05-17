@@ -35,7 +35,7 @@ body {
             font-size: 16px;
             border: none;
             outline: none;
-            color: white;
+            color: gray;
             padding: 14px 20px;
             background-color: inherit;
             margin: 0;
@@ -104,6 +104,7 @@ h1 {
             color: black;
              font : Italic;
         }
+
 
         #header {
             padding: 20px;
