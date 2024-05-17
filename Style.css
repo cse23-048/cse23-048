@@ -193,6 +193,23 @@ button{
 	overflow:hidden;
 }
 
+.watch-now-btn {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Display as inline-block */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.watch-now-btn:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
 span{
 	background:#009688;
 	height:100%;
