@@ -12,13 +12,6 @@ body {
     color: #333;
 }
 
-/* Banner Styles */
-.banner {
-    width: 100%;
-    height: 200px; /* Adjust height as needed */
-    background-color: #000;
-    position: relative;
-}
 
 .logo {
     width: 120px; /* Adjust logo size as needed */
