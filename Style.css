@@ -7,8 +7,9 @@
 
 /* Global Styles */
 body {
+	  background-image: bck.png;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color:;
     color: #333;
 }
 
