@@ -205,6 +205,26 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 transition: transform 0.2s;
         }
+/* TV Shows Section Styles */
+.tv-shows {
+    margin-top: 50px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie-card {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.2s;
+        }
+
 
 .banner {
         width:90%;
