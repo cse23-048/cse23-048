@@ -7,109 +7,50 @@
 
 /* Global Styles */
 body {
-    background-image: url('bck.png');
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     color: #333;
 }
 
+/* Banner Styles */
+.banner {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    background-color: #000;
+    position: relative;
+}
+
 .logo {
-    width: 120px;
+    width: 120px; /* Adjust logo size as needed */
     position: absolute;
     top: 20px;
     left: 20px;
 }
 
-/* Navbar Styles */
-.navbar {
-    /* Navbar Styles */
 .navbar {
     position: absolute;
-    top: 5px;
-    right: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 5px; /* Set a fixed width */
-    padding: 5px 6px;
-    border-radius: 5px;
+    top: 20px;
+    right: 20px;
 }
-    
-
 
 .navbar ul {
     list-style: none;
-    display: flex;
-    align-items: center;
 }
 
 .navbar ul li {
-    margin-right: 15px;
+    display: inline-block;
+    margin-right: 20px;
 }
 
-.navbar ul li a, .dropbtn {
+.navbar ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 15px;
-    display: block;
-    border-radius: 5px;
-}
-
-.navbar ul li a:hover, .dropdown:hover .dropbtn {
-    background-color: #555;
-    color: #fff;
-}
-
-.dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #555;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-radius: 5px;
-}
-
-.dropdown-content a {
-    color: #fff;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    border-radius: 5px;
-}
-
-.dropdown-content a:hover {
-    background-color: #666;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Banner Styles */
-.banner {
-    width: 90%;
-    height: 90vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(4,9,30,0.7)), url('background.html');
-    background-size: cover;
-    background-position: center;
-    background-color: #F4FAFC;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* Content Styles */
 .container {
-    max-width: 1200px;
+    max-width: 1200px; /* Adjust container width as needed */
     margin: 0 auto;
     padding: 20px;
 }
@@ -118,11 +59,10 @@ body {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('65.jpg');
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 400px; /* Adjust height as needed */
     padding: 50px;
     color: #fff;
     text-align: center;
-    border-radius: 10px;
 }
 
 .featured-title {
@@ -150,15 +90,9 @@ body {
     background-color: #0056b3;
 }
 
-/* Section Styles */
-.coming-soon, .tv-shows, .comedy-movies {
+/* Coming Soon Section Styles */
+.coming-soon {
     margin-top: 50px;
-}
-
-.coming-soon h2, .tv-shows h2, .comedy-movies h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
 }
 
 .image-container {
@@ -171,30 +105,25 @@ body {
     width: 200px;
     margin: 10px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-    border-radius: 10px;
-    overflow: hidden;
 }
 
 .movie-card img {
     width: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.movie-card:hover {
-    transform: scale(1.05);
+    border-radius: 5px;
 }
 
 .movie-title {
-    padding: 10px;
-    font-size: 16px;
+    margin-top: 10px;
     font-weight: bold;
-    color: white;
+    font-color:white;
 }
-
-/* Button Styles */
+.tv-shows {
+    margin-top: 50px;
+}
+.comedy-movies {
+    margin-top: 50px;
+}
+/*Button Styles */
 .watch-more-btn, .subscribe-btn {
     background-color: #007bff;
     color: #fff;
@@ -206,7 +135,6 @@ body {
     margin: 10px;
     transition: background-color 0.3s ease;
 }
-
 .watch-more-btn:hover, .subscribe-btn:hover {
     background-color: #0056b3;
 }
@@ -223,3 +151,9 @@ footer {
     background-color: #333;
     color: #fff;
 }
+Notes
+Ensure Image Paths: Veri
+
+
+
+   
