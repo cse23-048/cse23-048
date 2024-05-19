@@ -9,8 +9,9 @@
 body {
     background-image: url('bck.png');
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color:black;
     color: #333;
+    font-color:white;
 }
 
 .logo {
@@ -32,6 +33,7 @@ body {
     justify-content: space-between;
     width: 85%;
     margin: auto;
+    font-color:white;
 }
 
 .navbar ul {
@@ -71,10 +73,11 @@ body {
 }
 
 .dropdown-content a {
-    color: gray;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-color:black;
 }
 
 .dropdown-content a:hover {
@@ -182,7 +185,7 @@ body {
     padding: 10px;
     font-size: 16px;
     font-weight: bold;
-    color: white;
+    font-color: white;
 }
 
 /* Button Styles */
