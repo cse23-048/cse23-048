@@ -71,8 +71,8 @@ body {
     position: absolute;
     top: 20px;
     right: 20px;
-	ckground-color: gray;
-            overflow: overflow;
+background-color: black;
+ overflow: overflow;
 }
 
 .navbar ul {
@@ -97,8 +97,8 @@ body {
     padding: 20px;
 }
 h1 {
-            color: black;
-             font : Italic;
+	color: black;
+        font : Italic;
         }
 
 
