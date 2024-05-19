@@ -30,7 +30,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 85%;
+    width: 45%;
     margin: auto;
 }
 
@@ -54,7 +54,7 @@ body {
 
 .navbar ul li a:hover, .dropdown:hover .dropbtn {
     background-color: #ddd;
-    color: black;
+    color: white;
 }
 
 .dropdown {
@@ -183,6 +183,7 @@ body {
     padding: 10px;
     font-size: 16px;
     font-weight: bold;
+    font-color:white;
 }
 
 /* Button Styles */
