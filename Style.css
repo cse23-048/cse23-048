@@ -7,7 +7,7 @@
 
 /* Global Styles */
 body {
-	  background-image: bck.png;
+   background-image: bck.png;
     font-family: Arial, sans-serif;
     background-color:black;
     color: #333;
@@ -246,6 +246,7 @@ background-position :center;
 .movie-title {
     margin-top: 10px;
     font-weight: bold;
+    font-color:white;
 }
   .movie-card:hover {
             transform: scale(1.05);
