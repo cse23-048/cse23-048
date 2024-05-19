@@ -4,8 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warner Bros</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .banner {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a, .dropbtn {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .featured-content {
+            background-size: cover;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .featured-title {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .featured-button {
+            padding: 10px 20px;
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .movie-card {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            width: calc(20% - 20px);
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .movie-title {
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .watch-more-btn, .subscribe-btn {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <div class="banner">
@@ -47,113 +186,107 @@
                 <li><a href="#">Collections</a></li>
                 <li><a href="#">Feedback</a></li>
             </ul>
-            <form class="example" action="action_page.php">
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
         </div>
     </div>
 
-    <div class="section">
-        <div class="container">
-            <div class="content-container">
-                <div class="featured-content" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url('65.jpg');">
-                    <h1 class="featured-title">Featured Title</h1>
-                    <p class="featured-desc">
-                        In a foggy forest, a man in an advanced space suit wields a tech-based rifle in front of the skull of a Tyrannosaurus rex.
-                    </p>
-                    <button class="featured-button">Watch Now</button>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url('65.jpg');">
+                <h1 class="featured-title">Featured Title</h1>
+                <p class="featured-desc">
+                    In a foggy forest, a man in an advanced space suit wields a tech-based rifle in front of the skull of a Tyrannosaurus rex.
+                </p>
+                <button class="featured-button">Watch Now</button>
+            </div>
+
+            <section class="coming-soon">
+                <h2>Coming Soon</h2>
+                <div class="image-container">
+                    <div class="movie-card">
+                        <img src="65.jpg" alt="Movie 1">
+                        <div class="movie-title">65</div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="365 Days.jpg" alt="Movie 2">
+                        <div class="movie-title">365 Days</div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="john wick.jpg" alt="Movie 3">
+                        <div class="movie-title">John Wick</div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="Joker.jpeg" alt="Movie 4">
+                        <div class="movie-title">Joker</div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="Night Swim.jpeg" alt="Movie 5">
+                        <div class="movie-title">Night Swim</div>
+                    </div>
                 </div>
+            </section>
 
-                <section class="coming-soon">
-                    <h2>Coming Soon</h2>
-                    <div class="image-container">
-                        <div class="movie-card">
-                            <img src="65.jpg" alt="Movie 1">
-                            <div class="movie-title">65</div>
-                        </div>
-                        <div class="movie-card">
-                            <img src="365 Days.jpg" alt="Movie 2">
-                            <div class="movie-title">365 Days</div>
-                        </div>
-                        <div class="movie-card">
-                            <img src="john wick.jpg" alt="Movie 3">
-                            <div class="movie-title">John Wick</div>
-                        </div>
-                        <div class="movie-card">
-                            <img src="Joker.jpeg" alt="Movie 4">
-                            <div class="movie-title">Joker</div>
-                        </div>
-                        <div class="movie-card">
-                            <img src="Tarot.jpeg" alt="Movie 5">
-                            <div class="movie-title">Night Swim</div>
-                        </div>
+            <section class="TV-Shows">
+                <h2>TV Shows</h2>
+                <div class="image-container">
+                    <div class="movie-card">
+                        <img src="RealHousewives Of NYC.jpeg" alt="Show 1">
+                        <div class="movie-title">Real Housewives of NYC</div>
                     </div>
-                </section>
-
-                <section class="TV-Shows">
-                    <h2>TV Shows</h2>
-                    <div class="image-container">
-                        <div class="movie-card">
-                            <img src="RealHousewives Of NYC.jpeg" alt="Show 1">
-                            <div class="movie-title">Real Housewives of NYC</div>
-                        </div>
-                        <div class="movie-card">
-                            <img src="Young Sheldon.jpeg" alt="Show 2">
-                            <div class="movie-title">Young Sheldon</div>
-                        </div>
-                        <div class="movie-card">
-                            <img src="Role Play.jpeg" alt="Show 3">
-                            <div class="movie-title">Role Play</div>
-                        </div>
-                        <div class="movie-card">
-                            <img src="Married At First Sight.jpeg" alt="Show 4">
-                            <div class="movie-title">Married At First Sight</div>
-                        </div>
-                        <div class="movie-card">
-                            <img src="Tarot.jpeg" alt="Show 5">
-                            <div class="movie-title">Tarot</div>
-                        </div>
+                    <div class="movie-card">
+                        <img src="Young Sheldon.jpeg" alt="Show 2">
+                        <div class="movie-title">Young Sheldon</div>
                     </div>
-                </section>
-
-                <section class="Comedy-movies">
-                    <h2>Comedy Movies</h2>
-                    <div class="image-container">
-                        <div class="movie-card">
-                            <img src="Fall Guy.jpeg" alt="Movie 1">
-                            <div class="movie-title">Fall Guy</div>
-                        </div>
-                        <div class="movie-card">
-                            <img src="Odd Squad.jpeg" alt="Movie 2">
-                            <div class="movie-title">Odd Squad</div>
-                        </div>
-                        <div class="movie-card">
-                            <img src="Night School.jpeg" alt="Movie 3">
-                            <div class="movie-title">Night School</div>
-                        </div>
-                        <div class="movie-card">
-                            <img src="Hangover.jpeg" alt="Movie 4">
-                            <div class="movie-title">Hangover</div>
-                        </div>
-                        <div class="movie-card">
-                            <img src="Millers.jpeg" alt="Movie 5">
-                            <div class="movie-title">Millers</div>
-                        </div>
+                    <div class="movie-card">
+                        <img src="Role Play.jpeg" alt="Show 3">
+                        <div class="movie-title">Role Play</div>
                     </div>
-                </section>
-
-                <p>"The stuff that dreams are made of".. Subscribe to our channels,<br>Press the bell icon to get the latest updates.</p>
-                <div class="button-container">
-                    <button type="button" class="watch-more-btn">Watch More</button>
-                    <button type="button" class="subscribe-btn">Subscribe</button>
+                    <div class="movie-card">
+                        <img src="Married At First Sight.jpeg" alt="Show 4">
+                        <div class="movie-title">Married At First Sight</div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="Tarot.jpeg" alt="Show 5">
+                        <div class="movie-title">Tarot</div>
+                    </div>
                 </div>
+            </section>
+
+            <section class="Comedy-movies">
+                <h2>Comedy Movies</h2>
+                <div class="image-container">
+                    <div class="movie-card">
+                        <img src="Fall Guy.jpeg" alt="Movie 1">
+                        <div class="movie-title">Fall Guy</div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="Odd Squad.jpeg" alt="Movie 2">
+                        <div class="movie-title">Odd Squad</div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="Night School.jpeg" alt="Movie 3">
+                        <div class="movie-title">Night School</div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="Hangover.jpeg" alt="Movie 4">
+                        <div class="movie-title">Hangover</div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="Millers.jpeg" alt="Movie 5">
+                        <div class="movie-title">Millers</div>
+                    </div>
+                </div>
+            </section>
+
+            <p>"The stuff that dreams are made of".. Subscribe to our channels,<br>Press the bell icon to get the latest updates.</p>
+            <div>
+                <button type="button" class="watch-more-btn">Watch More</button>
+                <button type="button" class="subscribe-btn">Subscribe</button>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Warner Bros. All rights reserved. Created by Wendy K. Phoga.</p>
+        <p>&copy; 2024 Warner Bros. All rights reserved.</p>
     </footer>
 </body>
 </html>
