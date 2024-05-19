@@ -25,13 +25,13 @@ body {
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: gray;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: auto;
-    padding: 10px 20px;
-    border-radius: 5px;
+    width: 85%;
+    margin: auto;
 }
 
 .navbar ul {
@@ -64,14 +64,14 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: gray;
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: white;
+    color: gray;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -79,43 +79,15 @@ body {
 
 .dropdown-content a:hover {
     background-color: #ddd;
-    color: black;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-form.example {
-    display: flex;
-    align-items: center;
-}
-
-form.example input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: none;
-    border-radius: 5px 0 0 5px;
-    width: 200px;
-}
-
-form.example button {
-    padding: 10px;
-    font-size: 17px;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-}
-
-form.example button:hover {
-    background-color: #0056b3;
-}
-
 /* Banner Styles */
 .banner {
-    width: 100%;
+    width: 90%;
     height: 90vh;
     background-image: linear-gradient(rgba(0,0,0,0.75), rgba(4,9,30,0.7)), url('background.html');
     background-size: cover;
@@ -143,6 +115,7 @@ form.example button:hover {
     color: #fff;
     text-align: center;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .featured-title {
@@ -170,7 +143,7 @@ form.example button:hover {
     background-color: #0056b3;
 }
 
-/* Section Styles */
+/* Coming Soon Section Styles */
 .coming-soon, .tv-shows, .comedy-movies {
     margin-top: 50px;
 }
@@ -211,7 +184,6 @@ form.example button:hover {
     padding: 10px;
     font-size: 16px;
     font-weight: bold;
-    color: white;
 }
 
 /* Button Styles */
@@ -221,23 +193,14 @@ form.example button:hover {
     border: none;
     padding: 10px 20px;
     font-size: 16px;
-    font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
     margin: 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
 }
 
 .watch-more-btn:hover, .subscribe-btn:hover {
     background-color: #0056b3;
-    transform: scale(1.05);
-}
-
-.button-container {
-    text-align: center;
-    margin: 20px 0;
 }
 
 /* Footer Styles */
@@ -247,9 +210,3 @@ footer {
     background-color: #333;
     color: #fff;
 }
-
-    
-   
-
-
-   
