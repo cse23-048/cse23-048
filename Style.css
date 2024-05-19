@@ -7,10 +7,11 @@
 
 /* Global Styles */
 body {
-   background-image: bck.png;
+     background-image: bck.png;
     font-family: Arial, sans-serif;
     background-color:black;
     color: #333;
+    font-color: white;
 }
 
 
@@ -93,11 +94,11 @@ background-color: black;
 /* Content Styles */
 .container {
     max-width: 1200px; /* Adjust container width as needed */
-    margin: 0 auto;
+    margin: auto;
     padding: 20px;
 }
 h1 {
-	color: black;
+	color: white;
         font : Italic;
         }
 
@@ -184,46 +185,46 @@ h1 {
 }
 
 .featured-button:hover {
-    background-color: #0056b3;
+              background-color: #0056b3;
 }
 
 /* Coming Soon Section Styles */
 .coming-soon {
-    margin-top: 50px;
+         margin-top: 50px;
 }
 
 .image-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
 }
 
 .movie-card {
-    width: 200px;
-    margin: 10px;
-    text-align: center;
-   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-transition: transform 0.2s;
+         width: 200px;
+         margin: 10px;
+         text-align: center;
+         text-align: center;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         transition: transform 0.2s;
         }
 /* TV Shows Section Styles */
 .tv-shows {
-    margin-top: 50px;
+         margin-top: 50px;
 }
 
 .image-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
 }
 
 .movie-card {
-    width: 200px;
-    margin: 10px;
-    text-align: center;
-   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-transition: transform 0.2s;
+            width: 200px;
+            margin: 10px;
+            text-align: center;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
         }
 
 
@@ -231,11 +232,12 @@ transition: transform 0.2s;
         width:90%;
         height:90vh;
         background-image:linear-gradient(rgba(0,0,0,0.75)),(rgba(4,9,30.0.7)),url("background.html");
-background-size:cover;
-background-position :center;
-	background:#F4FAFC ;
+        background-size:cover;
+        background-position :center;
+        background:#F4FAFC ;
 	position:relative;
 }
+
 .movie-card img {
     width: 100%;
     border-radius: 5px;
@@ -251,10 +253,12 @@ background-position :center;
   .movie-card:hover {
             transform: scale(1.05);
         }
-        .movie-title {
+
+.movie-title {
             padding: 10px;
             font-size: 16px;
             font-weight: bold;
+	  font-color:white;
         }
 
 
