@@ -118,7 +118,7 @@ h1 {
         }
         #images{
            width: 5px;
-            height: 10px;
+            height: 5px;
             
         }
         #menu {
@@ -233,7 +233,7 @@ transition: transform 0.2s;
         background-image:linear-gradient(rgba(0,0,0,0.75)),(rgba(4,9,30.0.7)),url("background.html");
 background-size:cover;
 background-position :center;
-	background:black;
+	background:#F4FAFC ;
 	position:relative;
 }
 .movie-card img {
