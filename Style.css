@@ -205,14 +205,16 @@ section h2 {
 .movie-title {
     padding: 10px;
     font-size: 16px;
+    color: #000; /* Change the movie title font color to black for contrast */
+    font-weight: bold; /* Make the movie title bold */
 }
 
 /* Button Styles */
 .watch-more-btn,
 .subscribe-btn {
     padding: 10px 20px;
-    background-color: #000;
-    color: white;
+    background-color: #ff0000; /* Change button background color to red */
+    color: white; /* Change button text color to white */
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -221,7 +223,7 @@ section h2 {
 
 .watch-more-btn:hover,
 .subscribe-btn:hover {
-    background-color: #333;
+    background-color: #cc0000;
 }
 
 /* Footer Styles */
@@ -234,4 +236,3 @@ footer {
     width: 100%;
     bottom: 0;
 }
-
