@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warner Bros</title>
+    <title>Warner Bros Movies</title>
     <link rel="stylesheet" href="style.css">
     <style>
         /* Additional styles for image display */
         .image-container img {
             width: 100%;
             height: auto;
+        }
+
+        /* Button styles */
+        .button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
         }
     </style>
     <script>
@@ -26,7 +35,7 @@
         <img src="logo.png" alt="Warner Bros Logo" class="logo">
         <div class="navbar">
             <ul>
-                <li><a href="javascript:void(0)" onclick="showSection('home')">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
                     <button class="dropbtn">Movies</button>
                     <div class="dropdown-content">
@@ -58,6 +67,7 @@
                 <li><a href="javascript:void(0)" onclick="showSection('adventure')">Adventure</a></li>
                 <li><a href="javascript:void(0)" onclick="showSection('comedy')">Comedy</a></li>
             </ul>
+            <button class="button" onclick="showSection('home')">Home</button>
         </div>
     </section>
 
@@ -71,7 +81,7 @@
                 <img src="The Dark Knight.jpg" alt="Action Movie 3">
                 <img src="Die_Hard_(1988_film).jpg" alt="Action Movie 4">
             </div>
-            <button onclick="showSection('movies')">Exit</button>
+            <button class="button" onclick="showSection('movies')">Exit</button>
         </div>
     </section>
 
@@ -84,9 +94,8 @@
                 <img src="Jumanji.jfif" alt="Adventure Movie 2">
                 <img src="Everest.jfif" alt="Adventure Movie 3">
                 <img src="Planet of Apes.jfif" alt="Adventure Movie 4">
-                
             </div>
-            <button onclick="showSection('movies')">Exit</button>
+            <button class="button" onclick="showSection('movies')">Exit</button>
         </div>
     </section>
 
@@ -99,7 +108,7 @@
                 <img src="comedy_image2.jpg" alt="Comedy Movie 2">
                 <!-- Add more comedy movie images -->
             </div>
-            <button onclick="showSection('movies')">Exit</button>
+            <button class="button" onclick="showSection('movies')">Exit</button>
         </div>
     </section>
 
