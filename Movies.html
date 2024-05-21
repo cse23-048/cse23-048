@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles for image display */
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => section.style.display = 'none');
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</head>
+<body onload="showSection('home')">
+    <div class="banner">
+        <img src="logo.png" alt="Warner Bros Logo" class="logo">
+        <div class="navbar">
+            <ul>
+                <li><a href="javascript:void(0)" onclick="showSection('home')">Home</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Movies</button>
+                    <div class="dropdown-content">
+                        <a href="javascript:void(0)" onclick="showSection('movies')">Movies Page</a>
+                        <a href="javascript:void(0)" onclick="showSection('action')">Action</a>
+                        <a href="javascript:void(0)" onclick="showSection('adventure')">Adventure</a>
+                        <a href="javascript:void(0)" onclick="showSection('comedy')">Comedy</a>
+                    </div>
+                </li>
+                <!-- Other menu items -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <h1>Welcome to Warner Bros</h1>
+            <!-- Home content -->
+        </div>
+    </section>
+
+    <!-- Movies Section -->
+    <section id="movies">
+        <div class="container">
+            <h1>Movies</h1>
+            <ul>
+                <li><a href="javascript:void(0)" onclick="showSection('action')">Action</a></li>
+                <li><a href="javascript:void(0)" onclick="showSection('adventure')">Adventure</a></li>
+                <li><a href="javascript:void(0)" onclick="showSection('comedy')">Comedy</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Action Section -->
+    <section id="action" style="display: none;">
+        <div class="container">
+            <h1>Action Movies</h1>
+            <div class="image-container">
+                <img src="action_image1.jpg" alt="Action Movie 1">
+                <img src="action_image2.jpg" alt="Action Movie 2">
+                <!-- Add more action movie images -->
+            </div>
+            <button onclick="showSection('movies')">Exit</button>
+        </div>
+    </section>
+
+    <!-- Adventure Section -->
+    <section id="adventure" style="display: none;">
+        <div class="container">
+            <h1>Adventure Movies</h1>
+            <div class="image-container">
+                <img src="adventure_image1.jpg" alt="Adventure Movie 1">
+                <img src="adventure_image2.jpg" alt="Adventure Movie 2">
+                <!-- Add more adventure movie images -->
+            </div>
+            <button onclick="showSection('movies')">Exit</button>
+        </div>
+    </section>
+
+    <!-- Comedy Section -->
+    <section id="comedy" style="display: none;">
+        <div class="container">
+            <h1>Comedy Movies</h1>
+            <div class="image-container">
+                <img src="comedy_image1.jpg" alt="Comedy Movie 1">
+                <img src="comedy_image2.jpg" alt="Comedy Movie 2">
+                <!-- Add more comedy movie images -->
+            </div>
+            <button onclick="showSection('movies')">Exit</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Warner Bros. All rights reserved.</p>
+    </footer>
+</body>
+</html>
