@@ -3,20 +3,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #000; /* Change background color to black */
+    color: #fff; /* Change text color to white */
 }
 
 .banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #000;
+    background-color: #111; /* Darken the banner background */
     color: #fff;
     padding: 10px 20px;
-}
-
-.logo {
-    height: 50px;
 }
 
 .navbar ul {
@@ -25,10 +22,6 @@ body {
     padding: 0;
     display: flex;
     align-items: center;
-}
-
-.navbar ul li {
-    position: relative;
 }
 
 .navbar ul li a,
@@ -47,42 +40,44 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #fff;
-    color:#000;
+    background-color: #333; /* Change the dropdown background color */
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
+    color: white; /* Change the dropdown text color */
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #f4f4f4;
+    background-color: #444; /* Change the dropdown hover background color */
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
-/* Search Bar Styles */
+
+/* Search Bar and Login Button Styles */
 .search-bar {
     display: flex;
     align-items: center;
-    margin-left: auto;
     padding: 5px;
+    margin-right: 20px;
 }
 
 .search-bar input[type="text"] {
     padding: 8px;
     font-size: 16px;
-    border: 1px solid #ddd;
+    border: 1px solid #fff; /* Change border color to white */
     border-radius: 5px;
     width: 200px; /* Adjust width as needed */
     transition: border-color 0.3s ease;
+    background-color: transparent; /* Make input background transparent */
+    color: #fff; /* Change text color to white */
 }
 
 .search-bar input[type="text"]:focus {
@@ -105,6 +100,7 @@ body {
 .search-bar button:hover {
     background-color: #cc0000;
 }
+
 .login-btn {
     display: flex;
     align-items: center;
@@ -131,8 +127,6 @@ body {
 .login-btn a:hover {
     background-color: #333;
 }
-
-
 
 /* Content Styles */
 .container {
@@ -181,7 +175,7 @@ section h2 {
 .image-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px;
     justify-content: space-around;
 }
 
@@ -193,48 +187,4 @@ section h2 {
     width: 150px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-}
-
-.movie-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.movie-card:hover {
-    transform: scale(1.05);
-}
-
-.movie-title {
-    padding: 10px;
-    font-size: 16px;
-}
-
-/* Button Styles */
-.watch-more-btn,
-.subscribe-btn {
-    padding: 10px 20px;
-    background-color: #000;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    margin: 5px;
-}
-
-.watch-more-btn:hover,
-.subscribe-btn:hover {
-    background-color:#333;
-}
-
-/* Footer Styles */
-footer {
-    background-color:#000;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+    transition: transform 0.3
