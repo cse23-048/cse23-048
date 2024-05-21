@@ -104,6 +104,33 @@ body {
 .search-bar button:hover {
     background-color: #cc0000;
 }
+.login-btn {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.login-btn a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: #000;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn a i {
+    margin-right: 8px;
+}
+
+.login-btn a:hover {
+    background-color: #333;
+}
+
 
 
 /* Content Styles */
