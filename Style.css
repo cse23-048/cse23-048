@@ -67,6 +67,44 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+/* Search Bar Styles */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding: 5px;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px; /* Adjust width as needed */
+    transition: border-color 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #ff0000;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    background-color: #ff0000;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #cc0000;
+}
+
 
 /* Content Styles */
 .container {
