@@ -40,21 +40,23 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #333; /* Change the dropdown background color */
+    background-color: #fff; /* Change the dropdown background color to white */
+    color: #000; /* Change the dropdown text color to black */
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: white; /* Change the dropdown text color */
+    color: black; /* Change the dropdown text color to black */
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #444; /* Change the dropdown hover background color */
+    background-color: #f4f4f4; /* Change the dropdown hover background color */
+    color: #000; /* Change the dropdown hover text color */
 }
 
 .dropdown:hover .dropdown-content {
@@ -175,7 +177,7 @@ section h2 {
 .image-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px; /* Reduce the gap between movie cards */
     justify-content: space-around;
 }
 
@@ -186,5 +188,4 @@ section h2 {
     overflow: hidden;
     width: 150px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3
+    box-shadow: 
