@@ -12,7 +12,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #000; /* Change background color to black */
-    color: #fff; /* Change text color to white */
+    color: black; /* Change text color to black */
 }
 .logo { 
 
