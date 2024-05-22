@@ -6,9 +6,14 @@ body {
     background-color: #000; /* Change background color to black */
     color: #fff; /* Change text color to white */
 }
+.logo { 
+
+    height: 50px; 
+
+} 
 
 .logo {
-    height: 30px; /* Adjust the logo size as needed */
+/* Adjust the logo size as needed */
     margin-right: 10px; /* Space between the logo and the navbar items */
     padding: 2px; /* Optional padding if needed */
     display: block; /* Ensure the logo is displayed as a block element */
