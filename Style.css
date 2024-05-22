@@ -469,10 +469,14 @@ button[type="submit"]:hover {
 
 /* Footer Styles */
 footer {
+    padding: 5px 0; /* Adjust the padding as needed */
+}
+
+footer {
     background-color: #000;
     color: white;
     text-align: center;
-    padding: 4px 0;
+    padding: 5px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
