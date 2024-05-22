@@ -26,6 +26,152 @@ body {
     padding: 2px; /* Optional padding if needed */
     display: block; /* Ensure the logo is displayed as a block element */
 }
+/* Search Bar and Login Button Styles */
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #fff; /* Change border color to white */
+    border-radius: 5px;
+    width: 200px; /* Adjust width as needed */
+    transition: border-color 0.3s ease;
+    background-color: transparent; /* Make input background transparent */
+    color: #fff; /* Change text color to white */
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #ff0000;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    background-color: #ff0000;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #cc0000;
+}
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.login-btn a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: #000;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn a i {
+    margin-right: 8px;
+}
+
+.login-btn a:hover {
+    background-color: #333;
+}
+
+/* Content Styles */
+.container {
+    padding: 20px;
+}
+
+.featured-content {
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.featured-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.featured-desc {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.featured-button {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.featured-button:hover {
+    background-color: #cc0000;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Reduce the gap between movie cards */
+    justify-content: space-around;
+}
+
+.movie-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-title {
+    padding: 10px;
+    font-size: 16px;
+    color: #000; /* Change the movie title font color to black for contrast */
+    font-weight: bold; /* Make the movie title bold */
+}
+
 .nav-menu {
     list-style-type: none;
     padding: 0;
@@ -214,4 +360,31 @@ body {
 
 .feedback input[type="submit"]:hover {
     background-color: #0056b3;
+}
+/* Button Styles */
+.watch-more-btn,
+.subscribe-btn {
+    padding: 10px 20px;
+    background-color: #ff0000; /* Change button background color to red */
+    color: white; /* Change button text color to white */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.watch-more-btn:hover,
+.subscribe-btn:hover {
+    background-color: #cc0000;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
