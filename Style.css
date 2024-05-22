@@ -28,53 +28,45 @@ body {
     padding: 10px 20px;
 }
 
+/* Navbar Styling */
+.navbar {
+    background-color: #333; /* Background color of the navbar */
+    overflow: hidden; /* Clear floats */
+    margin-top: 20px; /* Margin from the top */
+}
+
 .navbar ul {
-    list-style: none;
+    list-style-type: none; /* Remove bullets */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Display as flexbox */
+    justify-content: center; /* Center the items */
+}
+
+.navbar ul li {
+    display: inline; /* Display list items inline */
+    margin-right: 10px; /* Space between links */
+}
+
+.navbar ul li a {
+    display: block; /* Block display for padding */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Padding around links */
+    text-decoration: none; /* Remove underline */
+    font-size: 17px; /* Font size */
+}
+
+.navbar ul li a:hover {
+    background-color: #575757; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+/* Ensure other styles don't conflict */
+body {
     margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-.navbar ul li a,
-.dropbtn {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    display: block;
-}
-
-.navbar ul li a:hover,
-.dropdown:hover .dropbtn {
-    background-color: #555;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #fff; /* Change the dropdown background color to white */
-    color: #000; /* Change the dropdown text color to black */
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black; /* Change the dropdown text color to black */
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #f4f4f4; /* Change the dropdown hover background color */
-    color: #000; /* Change the dropdown hover text color */
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 /* Search Bar and Login Button Styles */
 .search-bar {
     display: flex;
