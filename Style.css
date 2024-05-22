@@ -6,6 +6,12 @@
     background-color: #333;
     padding: 20px;
 }
+.navbar-nav .nav-link {
+    color: black;
+    font-weight: bold;
+    font-family:Tahoma;
+}
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
