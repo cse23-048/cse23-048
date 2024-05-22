@@ -170,6 +170,7 @@ section h2 {
     font-size: 16px;
     color: #000; /* Change the movie title font color to black for contrast */
     font-weight: bold; /* Make the movie title bold */
+    font-color: black;
 }
 
 .nav-menu {
@@ -251,6 +252,7 @@ section h2 {
     margin-top: 10px;
     font-size: 16px;
     font-weight: bold;
+    font-color:black;
 }
 /* Collections page styles */
 .collections {
@@ -283,6 +285,7 @@ section h2 {
     margin-top: 10px;
     font-size: 18px;
     font-weight: bold;
+    font-color:black;
 }
 /* Apps & Games page styles */
 .apps-games {
@@ -315,6 +318,7 @@ section h2 {
     margin-top: 10px;
     font-size: 18px;
     font-weight: bold;
+    font-color:black;
 }
 /* Feedback page styles */
 /* Styling for form elements */
