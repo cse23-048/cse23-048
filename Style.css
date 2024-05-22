@@ -428,6 +428,22 @@ section {
 .feedback input[type="submit"]:hover {
     background-color: #0056b3;
 }
+/* Styling for the submit button */
+button[type="submit"] {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
 /* Button Styles */
 .watch-more-btn,
 .subscribe-btn {
