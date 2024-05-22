@@ -5,81 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warner Bros Movies</title>
     <link rel="stylesheet" href="Style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
-        </div>
-    
-        
-        <ul class="nav-menu" id="nav-menu">
+    <div class="banner">
+        <img src="logo.png" alt="Warner Bros Logo" class="logo">
+    </div>
+
+    <div class="navbar">
+        <ul>
             <li><a href="index.html">Home</a></li>
-        
-            <li><a href="Movies.html" class="active">Kids</a></li>
+            <li><a href="Movies.html">Movies</a></li>
+            <li><a href="TV Shows.html">TV Shows</a></li>
+            <li><a href="Games&Apps.html">Games & Apps</a></li>
+            <li><a href="Kids.html">Kids</a></li>
             <li><a href="Collections.html">Collections</a></li>
             <li><a href="Feedback.html">Feedback</a></li>
-            <li>
-                <a href="Sign-in.html" class="btn btn-hover">
-                    <span>Sign in</span>
-                </a>
-            </li>
         </ul>
-    </header>
+    </div>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Welcome to the Interesting Zone!</h1>
-                <p>Discover fun and exciting movies of all ages.</p>
-            </div>
-        </section>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button type="button">Search</button>
+    </div>
 
+    <div class="login-btn">
+        <a href="login.html">
+            <i class="fas fa-user"></i> Sign In
+        </a>
+    </div>
 
-    <!-- Action Section -->
-    <section id="action" style="display: none;">
-        <div class="container">
-            <h1>Action Movies</h1>
-            <div class="image-container">
-                <img src="Mad Max.jpg" alt="Action Movie 1">
-                <img src="john wick.jpg" alt="Action Movie 2">
-                <img src="The Dark Knight.jpg" alt="Action Movie 3">
-                <img src="Die_Hard_(1988_film).jpg" alt="Action Movie 4">
-            </div>
-            <button class="button" onclick="showSection('movies')">Exit</button>
+    <div class="container">
+        <div class="content-container">
+            <section class="hero">
+                <div class="container">
+                    <h1>Welcome to the Interesting Zone!</h1>
+                    <p>Discover fun and exciting movies of all ages.</p>
+                </div>
+            </section>
+
+            <!-- Action Section -->
+            <section id="action" style="display: none;">
+                <div class="container">
+                    <h1>Action Movies</h1>
+                    <div class="image-container">
+                        <img src="Mad Max.jpg" alt="Action Movie 1">
+                        <img src="john wick.jpg" alt="Action Movie 2">
+                        <img src="The Dark Knight.jpg" alt="Action Movie 3">
+                        <img src="Die_Hard_(1988_film).jpg" alt="Action Movie 4">
+                    </div>
+                    <button class="button" onclick="showSection('movies')">Exit</button>
+                </div>
+            </section>
+
+            <!-- Adventure Section -->
+            <section id="adventure" style="display: none;">
+                <div class="container">
+                    <h1>Adventure Movies</h1>
+                    <div class="image-container">
+                        <img src="Blackwidow.jfif" alt="Adventure Movie 1">
+                        <img src="Jumanji.jfif" alt="Adventure Movie 2">
+                        <img src="Everest.jfif" alt="Adventure Movie 3">
+                        <img src="Planet of Apes.jfif" alt="Adventure Movie 4">
+                    </div>
+                    <button class="button" onclick="showSection('movies')">Exit</button>
+                </div>
+            </section>
+
+            <!-- Comedy Section -->
+            <section id="comedy" style="display: none;">
+                <div class="container">
+                    <h1>Comedy Movies</h1>
+                    <div class="image-container">
+                        <img src="French Prince.jpeg" alt="Comedy Movie 1">
+                        <img src="FF.jpeg" alt="Comedy Movie 2">
+                    </div>
+                    <button class="button" onclick="showSection('movies')">Exit</button>
+                </div>
+            </section>
         </div>
-    </section>
-
-    <!-- Adventure Section -->
-    <section id="adventure" style="display: none;">
-        <div class="container">
-            <h1>Adventure Movies</h1>
-            <div class="image-container">
-                <img src="Blackwidow.jfif" alt="Adventure Movie 1">
-                <img src="Jumanji.jfif" alt="Adventure Movie 2">
-                <img src="Everest.jfif" alt="Adventure Movie 3">
-                <img src="Planet of Apes.jfif" alt="Adventure Movie 4">
-            </div>
-            <button class="button" onclick="showSection('movies')">Exit</button>
-        </div>
-    </section>
-
-    <!-- Comedy Section -->
-    <section id="comedy" style="display: none;">
-        <div class="container">
-            <h1>Comedy Movies</h1>
-            <div class="image-container">
-                <img src="French Prince.jpeg" alt="Comedy Movie 1">
-                <img src="FF.jpeg" alt="Comedy Movie 2">
-                
-            </div>
-            <button class="button" onclick="showSection('movies')">Exit</button>
-        </div>
-    </section>
+    </div>
 
     <footer>
         <p>&copy; 2024 Warner Bros. All rights reserved.</p>
     </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
 </body>
 </html>
